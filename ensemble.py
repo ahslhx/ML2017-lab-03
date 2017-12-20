@@ -46,7 +46,6 @@ class AdaBoostClassifier:
                 distribution[j] = distribution[j] * np.exp(-alpha * y[j] * pred_y[j])
             distribution = distribution / np.sum(distribution)
 
-
         return self
 
 
